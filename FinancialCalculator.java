@@ -3,13 +3,13 @@ import java.util.Scanner;
 import java.text.DecimalFormat;
 
 public class FinancialCalculator {
+    // Initalize the scanner.
+    static Scanner scanner = new Scanner(System.in);
+
     // Set double to print with only 2 decimal places.
     private static final DecimalFormat df = new DecimalFormat("0.00");
 
     public static void main(String[] args) {
-        // Initialize the scanner.
-        Scanner scanner = new Scanner(System.in);
-
         // Ask the user which calculator they want to use.
         System.out.println("Which calculator would you like to use?");
         System.out.println("1. A Mortgage Calculator");
@@ -36,9 +36,6 @@ public class FinancialCalculator {
 
     // Create the mortgage calculator.
     public static void mortgageCalculator() {
-        // Initalize the scanner.
-        Scanner scanner = new Scanner(System.in);
-
         // Tell user to enter the principal.
         System.out.println("");
         System.out.print("Input the principal: ");
@@ -75,9 +72,6 @@ public class FinancialCalculator {
 
     // Create the future value calculator.
     public static void futureValue() {
-        // Initalize the scanner.
-        Scanner scanner = new Scanner(System.in);
-
         // Tell user to enter the deposit.
         System.out.println("");
         System.out.print("Input the deposit: ");
@@ -114,9 +108,6 @@ public class FinancialCalculator {
 
     // Create the present value calculator.
     public static void presentValue() {
-        // Initalize the scanner.
-        Scanner scanner = new Scanner(System.in);
-
         // Tell user to enter the monthly payout.
         System.out.println("");
         System.out.print("Input the monthly payout: ");
