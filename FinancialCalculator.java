@@ -39,14 +39,29 @@ public class FinancialCalculator {
         // Tell user to enter the principal.
         System.out.println("");
         System.out.print("Input the principal: ");
+        // Error message for erroneous inputs.
+        while (!scanner.hasNextDouble()) {
+            System.out.println("Invalid entry. Please try again.");
+            scanner.next();
+        }
         double principal = scanner.nextDouble();
 
         // Tell user to enter the interest rate.
         System.out.print("Input the interest rate: ");
+        // Error message for erroneous inputs.
+        while (!scanner.hasNextDouble()) {
+            System.out.println("Invalid entry. Please try again.");
+            scanner.next();
+        }
         double interestRate = scanner.nextDouble();
 
         // Tell user to enter the loan length in years.
         System.out.print("Input the loan length in years: ");
+        // Error message for erroneous inputs.
+        while (!scanner.hasNextInt()) {
+            System.out.println("Invalid entry. Please try again.");
+            scanner.next();
+        }
         int loanLength = scanner.nextInt();
 
         // Calculate the monthly interest rate.
@@ -75,14 +90,29 @@ public class FinancialCalculator {
         // Tell user to enter the deposit.
         System.out.println("");
         System.out.print("Input the deposit: ");
+        // Error message for erroneous inputs.
+        while (!scanner.hasNextDouble()) {
+            System.out.println("Invalid entry. Please try again.");
+            scanner.next();
+        }
         double deposit = scanner.nextDouble();
 
         // Tell user to enter the interest rate.
         System.out.print("Input the interest rate: ");
+        // Error message for erroneous inputs.
+        while (!scanner.hasNextDouble()) {
+            System.out.println("Invalid entry. Please try again.");
+            scanner.next();
+        }
         double interestRate = scanner.nextDouble();
 
         // Tell user to enter the length in years.
         System.out.print("Input the length in years: ");
+        // Error message for erroneous inputs.
+        while (!scanner.hasNextInt()) {
+            System.out.println("Invalid entry. Please try again.");
+            scanner.next();
+        }
         int totalLength = scanner.nextInt();
 
         // Calculate the monthly interest rate.
@@ -111,14 +141,29 @@ public class FinancialCalculator {
         // Tell user to enter the monthly payout.
         System.out.println("");
         System.out.print("Input the monthly payout: ");
+        // Error message for erroneous inputs.
+        while (!scanner.hasNextDouble()) {
+            System.out.println("Invalid entry. Please try again.");
+            scanner.next();
+        }
         double monthlyPayout = scanner.nextDouble();
 
         // Tell the user to enter the expected interest rate.
         System.out.print("Input the expected interest rate: ");
+        // Error message for erroneous inputs.
+        while (!scanner.hasNextDouble()) {
+            System.out.println("Invalid entry. Please try again.");
+            scanner.next();
+        }
         double expectedRate = scanner.nextDouble();
 
         // Tell the user to enter the years to pay out.
         System.out.print("Input the years to pay out: ");
+        // Error message for erroneous inputs.
+        while (!scanner.hasNextInt()) {
+            System.out.println("Invalid entry. Please try again.");
+            scanner.next();
+        }
         int payOutYears = scanner.nextInt();
 
         // Calculate the monthly interest rate.
